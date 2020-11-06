@@ -1,0 +1,30 @@
+<div *ngIf="flag">
+  <div class="card" style="width: 18rem;">
+    <img src="assets/images/needy1.jfif" class="card-img-top" />
+    <div class="card-body">
+      <h5 class="card-title">I Want to Help Someone</h5>
+      <p class="card-text">
+        Please Click this if you want to help someone by physically present at
+        the place we will show you
+      </p>
+
+      <a class="btn btn-primary" routerLink="/help" (click)="navig()"
+        >Let's Help</a
+      >
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="assets/images/needy3.jpg" class="card-img-top" />
+    <div class="card-body">
+      <h5 class="card-title">Want to tell us Poor People location</h5>
+      <p class="card-text">
+        Please click if you want to help someone by uploading their real time
+        location and their photos and videos
+      </p>
+      <a routerLink="/provide" (click)="navig()" class="btn btn-primary"
+        >Let's Help</a
+      >
+    </div>
+  </div>
+</div>
